@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+$yellow: #F4D04E;
+$black: #111111;
+$gray: #7F7F7F;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: $yellow;
+    display: flex;
+    justify-content: center;
+    padding: 218px 0px;
+    font-family: "Figtree", sans-serif;
+
+    .main_card {
+        width: 384px;
+        background-color: white;
+        border-radius: 20px;
+        padding: 24px;
+        box-shadow: 8px 8px $black;
+
+        .blog_img {
+            border-radius: 10px;
+            margin-bottom: 24px;
+            width: 100%;
+        }
+
+        .cat_container {
+            font-weight: 800;
+            font-size: 14px;
+            padding: 4px 12px;
+            background-color: $yellow;
+            border-radius: 4px;
+            margin-bottom: 12px;
+        }
+
+        .date {
+            font-size: 14px;
+            font-weight: 400;
+            color: $black;
+            margin-bottom: 12px;
+        }
+
+        .card_title {
+            font-size: 24px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease-in;
+
+            &:hover {
+                color: $yellow;
+            }
+        }
+
+        .card_body {
+            color: $gray;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+
+        .author_container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            .author_img {
+                width: 32px;
+            }
+
+            .author_name {
+                font-weight: 700;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    body {
+        padding: 155px 24px;
+    }
+}
